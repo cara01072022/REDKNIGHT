@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657530999-L2PnPPeR" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "สวัสดีค่ะ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "animated": true,
+            "url": "https://www.img.in.th/images/d04bfc96358ca52f9f4395073acbc7d4.png"
+          }
+        ],
+        "margin": "md",
+        "borderWidth": "bold",
+        "borderColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎀 รับได้ทุกยูส 🎀",
+            "color": "#ffffff",
+            "weight": "bold",
+            "margin": "md",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "กดที่ปุ่มรับเครดิตฟรีได้เลย",
+            "color": "#ffffff",
+            "align": "center",
+            "size": "sm",
+            "margin": "sm",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "💸สมัครสมาชิกใหม่ ฝาก 300 รับ 500💸",
+            "color": "#ddcb37",
+            "align": "center",
+            "size": "sm",
+            "margin": "md"
+          }
+        ],
+        "margin": "md",
+        "cornerRadius": "md",
+        "backgroundColor": "#660000"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "endColor": "#660000",
+      "startColor": "#CC9999"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รับฟรี 50 เครดิต",
+            "weight": "bold",
+            "color": "#ffffff",
+            "align": "center",
+            "offsetTop": "none",
+            "size": "xl"
+          }
+        ],
+        "backgroundColor": "#CC9966",
+        "cornerRadius": "sm",
+        "paddingAll": "md",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://bit.ly/3rCSH4x"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สมัครสมาชิกใหม่",
+            "color": "#ffffff",
+            "weight": "bold",
+            "align": "center",
+            "size": "xl"
+          }
+        ],
+        "paddingAll": "md",
+        "backgroundColor": "#CC9966",
+        "margin": "md",
+        "cornerRadius": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://www.superjoker99.com/"
+        }
+      }
+    ],
+    "backgroundColor": "#660000",
+    "paddingAll": "xxl"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>

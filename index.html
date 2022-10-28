@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657541643-roL1LeJk" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "มาก่อน รวยก่อน",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "size": "full",
+                "aspectRatio": "1:1",
+                "aspectMode": "fit",
+                "url": "https://cdn.discordapp.com/attachments/1026882192590241833/1027161919100047420/02.2-01_2.jpg"
+              }
+            ]
+          }
+        ],
+        "borderColor": "#ff6600",
+        "borderWidth": "medium",
+        "cornerRadius": "lg",
+        "offsetBottom": "xs"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "size": "full",
+                    "aspectRatio": "2:1",
+                    "aspectMode": "fit",
+                    "url": "https://cdn.discordapp.com/attachments/1030756674186788914/1035527799659831316/db11c0cd31eb672e.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "borderColor": "#ff6600",
+        "borderWidth": "medium",
+        "cornerRadius": "lg",
+        "spacing": "xxl",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1030756674186788914/1035528320458170418/f81955e992179b91.png",
+                "size": "full",
+                "aspectRatio": "4:1",
+                "aspectMode": "cover",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/Q97SR5h"
+                }
+              }
+            ],
+            "cornerRadius": "md",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/Q97SR5h"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1030756674186788914/1035528343547822090/449e6dc1fad21cab.png",
+                "size": "full",
+                "aspectRatio": "4:1",
+                "aspectMode": "cover",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/Q97SR5h"
+                }
+              }
+            ],
+            "cornerRadius": "md",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/Q97SR5h"
+            }
+          }
+        ],
+        "spacing": "lg",
+        "margin": "md"
+      }
+    ],
+    "paddingAll": "md",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000000",
+      "endColor": "#000000"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
